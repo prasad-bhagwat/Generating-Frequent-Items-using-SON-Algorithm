@@ -69,9 +69,9 @@ def main():
     output_result       = ""
 
     # Creating Spark Context
-    spark_config  = SparkConf()
-    spark_context = SparkContext(conf = spark_config)
-    input_data    = spark_context.textFile(input_file).coalesce(8)
+    spark_config  	= SparkConf()
+    spark_context 	= SparkContext(conf = spark_config)
+    input_data    	= spark_context.textFile(input_file).coalesce(8)
 
     # Extracting header
     data = input_data.filter(lambda x: "userId" not in x)
@@ -88,14 +88,14 @@ def main():
 
     # Generating expected format output string for all frequent itemsets of order 1
     result 	        = map(concat_parenthesis, ratings_list)
-    output_result   += str(', '.join(result)) + "\n"+ "\n"
+    output_result   	+= str(', '.join(result)) + "\n"+ "\n"
 
     # Generating combinations of frequent items of size 1 for getting pairs using Combinations() function
-    combinations    = list(itertools.combinations(ratings_list, 2))
-    freq_items 	    = ratings_rdd.mapPartitions(lambda x : count_candidates(x, combinations)).flatMap(lambda x: x).reduceByKey(add).filter(lambda x: x[1] >= support_threshold).map(lambda x: x[0])
+    combinations    	= list(itertools.combinations(ratings_list, 2))
+    freq_items 	    	= ratings_rdd.mapPartitions(lambda x : count_candidates(x, combinations)).flatMap(lambda x: x).reduceByKey(add).filter(lambda x: x[1] >= support_threshold).map(lambda x: x[0])
 
-    tuple_size     = 2
-    next_iteration  = True
+    tuple_size     	= 2
+    next_iteration  	= True
 
     # Generating frequent itemsets of higher order
     while next_iteration:
