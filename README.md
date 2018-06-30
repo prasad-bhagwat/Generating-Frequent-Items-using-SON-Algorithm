@@ -26,11 +26,11 @@ Exceuting SON algorithm using _“Prasad\_Bhagwat\_SON.py”_ file
     
 
 where,  
-_case number_ corresponds to which _‘case’_ to execute for generating frequent items  
-for generating combinations of frequent movies choose _1_   
-for generating combinations of frequent users choose _2_   
-_csv file path_ corresponds to the absolute path of input _‘ratings.csv’_ file  
-_support threshold_ corresponds to the support required item to be considered as Frequent Item
+_1. 'case number'_ corresponds to which _‘case’_ to execute for generating frequent items  
+for generating combinations of frequent movies choose _'1'_   
+for generating combinations of frequent users choose _'2'_   
+_2. 'csv file path'_ corresponds to the absolute path of input _‘ratings.csv’_ file  
+_3. 'support threshold'_ corresponds to the support required item to be considered as Frequent Item
 
 Example usage of the above command is as follows:
 
@@ -49,11 +49,11 @@ Exceuting SON algorithm using _“Prasad\_Bhagwat\_SON.jar”_
     
 
 where,  
-_case number_ corresponds to which _‘case’_ to execute for generating frequent items  
-for generating combinations of frequent movies choose _1_   
-for generating combinations of frequent users choose _2_   
-_csv file path_ corresponds to the absolute path of input _‘ratings.csv’_ file  
-_support threshold_ corresponds to the support required item to be considered as Frequent Item
+_1. 'case number'_ corresponds to which _‘case’_ to execute for generating frequent items  
+for generating combinations of frequent movies choose _'1'_   
+for generating combinations of frequent users choose _'2'_   
+_2. 'csv file path'_ corresponds to the absolute path of input _‘ratings.csv’_ file  
+_3. 'support threshold'_ corresponds to the support required item to be considered as Frequent Item
 
 Example usage of the above command is as follows:
 
