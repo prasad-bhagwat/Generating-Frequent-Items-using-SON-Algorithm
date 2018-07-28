@@ -9,6 +9,7 @@ import os
 # Macro definitions
 n_C_2 = [0, 0, 1, 3, 6, 10, 15, 21, 28, 36, 45, 55, 66, 78, 91, 105, 120, 136, 153, 171, 190, 210]
 
+
 # Concatenate the frequent items in the expected output format
 def concat_parenthesis(freq_item):
     return str('(' + str(freq_item) + ')')
